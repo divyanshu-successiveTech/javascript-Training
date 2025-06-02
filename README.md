@@ -1,10 +1,11 @@
 # javascript-Training
 
-#12 factor app
+## 12 factor app
 
 It gives us set of principles or best practices on how a web-app should be made that are now more commonly known as Software-as-a-service(SAAS)
 
 The 12 factors are :-
+
 1- CodeBase
 It says that every app should only have a single codebase (where the code is written) that is available at only one place and the changes should be tracked using version control systems like git to maintain the code.
 
@@ -46,7 +47,7 @@ It refers that any event should be logged to the standard output stream and envi
 It says that management tasks should be executed as separate, short-lived processes, distinct from the main application so that nothing form the main application is compromised.
 
 
-#Atomic design 
+## Atomic design 
 
 It is a methodology that is used when making a ui for a webpage it should be broken down into simpler re-usable,modular components.
 
@@ -58,21 +59,21 @@ Organisms:-Complex UI sections like a header, footer etc.
 Templates:-These provide a structure for the webpage without any actual content.
 Pages:-It is a fully populated template with complete data that is ready for user interaction.
 
-#Git vs GitHub
+## Git vs GitHub
 
 Git is a software tool or a version control tool that allows us to track changes to our codebase overtime ,that and helps us to manage different versions of the project .
 It can work locally on the machine and the changes to the project can be commit without any need for internet coinnction.
 
 GitHub is a web based service that is used to host and store git repositiories and this repositories can be shared with others and can be used to collaborate with others.
 
-#Git config
+## Git config
 
 It is used to some default elements to the git like it uses the user name and mail to label every commit and some other settings that can be scoped into 3 types
 -local
 -global 
 -system
 
-#Git ignore
+## Git ignore
 
 It tells the git to ignore the given files form every commit and do not store the information from the given files.
 it can be used to secure some sensitive,personal information and not upload it to the repository.
