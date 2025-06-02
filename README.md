@@ -1,4 +1,3 @@
 # javascript-Training
 
-//12 factor app
-//atomic design 
+this is the readme file
