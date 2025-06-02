@@ -1,5 +1,6 @@
 # javascript-Training
 
+
 ## 12 factor app
 
 It gives us set of principles or best practices on how a web-app should be made that are now more commonly known as Software-as-a-service(SAAS)
@@ -77,3 +78,5 @@ It is used to some default elements to the git like it uses the user name and ma
 
 It tells the git to ignore the given files form every commit and do not store the information from the given files.
 it can be used to secure some sensitive,personal information and not upload it to the repository.
+
+
