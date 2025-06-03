@@ -1,8 +1,8 @@
 
-let userInput = prompt("Enter any numebr :");
+let userInput = prompt("Enter any numebr :");//Taking user input 
 getSquare = (a) => a**2;
 
 let squaredNumber = getSquare(userInput);
 
-console.log(squaredNumber);
+console.log(squaredNumber);//Printing to browser console 
 

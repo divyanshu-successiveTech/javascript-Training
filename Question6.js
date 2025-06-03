@@ -1,7 +1,7 @@
 
-let inputNumber = prompt("Enter any number:")
+let inputNumber = prompt("Enter any number:")//Taking user input.
 
-
+//Implementation
 isEven = (a) => {
     if(a%2 == 0){
         return true;
@@ -11,4 +11,4 @@ isEven = (a) => {
 
 }
 var result = isEven(inputNumber);
-console.log(result);
+console.log(result);//Printing to browser console.
