@@ -1,5 +1,5 @@
 
-let userInput = prompt("Enter any numebr :");//Taking user input 
+let userInput = parseFloat(prompt("Enter any numebr :"));//Taking user input 
 getSquare = (a) => a**2;
 
 let squaredNumber = getSquare(userInput);

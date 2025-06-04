@@ -1,14 +1,10 @@
 
-let inputNumber = prompt("Enter any number:")//Taking user input.
+let inputNumber = parseFloat(prompt("Enter any number:"))//Taking user input.
 
 //Implementation
-isEven = (a) => {
-    if(a%2 == 0){
-        return true;
-    }else{
-        false;
-    }
+isEven = (number) => 
+    number%2 == 0 ? "Even" : "Odd";
 
-}
+
 var result = isEven(inputNumber);
 console.log(result);//Printing to browser console.
