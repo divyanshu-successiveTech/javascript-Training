@@ -1,3 +1,5 @@
+//6. Write a program to display prime numbers from 1 to 50
+
 
 const isPrime = (n) => {
     for(let i=2;i<Math.sqrt(n);i++){

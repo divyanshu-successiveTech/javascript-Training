@@ -1,3 +1,26 @@
+//2. Write a program to display following output as shown in figure
+
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+
+// 1
+// 2 2
+// 3 3 3
+// 4 4 4 4
+
+// 1 2 3 4 5
+// 1 2 3 4
+// 1 2 3
+// 1 2
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+
+
 pattern1 = (n) => {
     let curr = 1;
     for(let i = 1;i <= n;i++){

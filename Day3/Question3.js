@@ -1,3 +1,15 @@
+//3. Write a program to display Diamond Pattern
+
+//         *
+//       *  *
+//     *  *  *
+//   *  *  *  *
+// *  *  *  *  *
+//   *  *  *  *
+//     *  *  *
+//      *  *
+//        *
+
 function pattern(){
 
     let num=parseFloat(prompt("Enter a number:"))

@@ -1,3 +1,7 @@
+//5. Write a program to print all even number first and then all odd numbers using only one iteration
+
+
+
 let userInput = parseFloat(prompt("Enter the limit"));
 
 let even="";
