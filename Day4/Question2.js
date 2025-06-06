@@ -1,3 +1,7 @@
+// 2.Write a program to reverse a string ("Hello John" => "olleH nhoJ")
+
+
+
 let str = "Hello"
 
 const reverseString =(str) =>{

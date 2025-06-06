@@ -1,3 +1,7 @@
+// 5. Write a program to convert given string in camel case ("hello john doe" => helloJohnDoe)
+
+
+
 let text = "this is the string";
 let str=text.trim();
 

@@ -1,3 +1,8 @@
+// 13. Write a program to return inverse of an array
+
+
+
+
 let arr=[2,3,4,0,1];
 
 const inverseArray = (arr) =>{
