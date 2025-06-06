@@ -1,12 +1,16 @@
 // 10. Write a program to concatenate an input of array of arrays
 
 
-// arr=arr.flat();
-// console.log(arr);
 
+// Method-1
+arr=arr.flat();
+console.log(arr);
+
+
+
+// Method-2
 let arr=[[1,2,3],2,3,[4,5,6,[1,2]]];
 let res = [];
-
 const flatten = (arr1,arr2) => {   
     for (const c of arr2){
         if(Array.isArray(c)){
@@ -17,7 +21,6 @@ const flatten = (arr1,arr2) => {
     }return res;
     
 }
-
 for(const i of arr){
     if(Array.isArray(i)){
         flatten(res,i);
