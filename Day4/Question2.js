@@ -2,7 +2,7 @@
 
 
 // Method-1``
-let str = "Hello"
+let str = "Hello John"
 
 const reverseString =(str) =>{
 
@@ -15,7 +15,10 @@ const reverseString =(str) =>{
 
 }
 
-console.log(reverseString(str));
+// console.log(reverseString(str));
+
+
+
 
 // Method-2
 const recurReverse =(str,n,s) =>{
@@ -29,6 +32,16 @@ const recurReverse =(str,n,s) =>{
     }
 }
 
-let s=""
-console.log(recurReverse(str,str.length-1,s));
+// let s=""
+// console.log(recurReverse(str,str.length-1,s));
+
+let res="";
+const arr = str.split(" ");
+for(let i=0;i<arr.length;i++){
+    
+    res += reverseString(arr[i]+" ");
+    
+}
+
+console.log(res);
 
