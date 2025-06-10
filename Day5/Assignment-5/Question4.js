@@ -12,34 +12,28 @@ const obj ={
         console.log("Hello");
     },
 
-    date : new Date(),
+    
 }
 
 const a=obj;
 
-
-const newObj = {};
-
-const deepClone = (obj,newObj) => {
-    
+const deepClone = (obj) => {
+    let newObj = obj.hasOwnProperty('length')?[]:{};
     for(const c in obj){  
-        
-        if(typeof(obj[c]) === "object"){
-            console.log("execute if")
-            deepClone(obj[c],newObj);
-        }else{   
-            console.log("execute else")
-            newObj[c] = obj[c];
-        }
+        if(typeof(obj[c]) == "object"){ 
+            newObj[c] = deepClone(obj[c]);
+        }else{
+            newObj[c] = obj[c];            
+        }   
     }
     return newObj;
 }
 
 
-deepClone(obj,newObj);
+let ans = deepClone(obj);
 
-newObj.arr=[4,45];
-console.log(newObj);
+ans.next.nest["1"]=4;
+console.log(ans);
 console.log(obj);
 
 

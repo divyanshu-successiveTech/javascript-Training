@@ -12,23 +12,23 @@ const obj = {
 };
 
 otherObj = {};
-const flatten =(obj) => {
-    
-    for(const c in obj){
-        // console.log(typeof(obj[c]));
-        
-        if(typeof(obj[c]) === "object"){
-            console.log("execute if ");
 
-            
-            flatten(obj[c]);
+const flatten = (obj,prev,otherObj) => {
+    
+    for(let i in obj){
+        let presentStr = "";
+        if(typeof(obj[i]) == "object"){
+
+            presentStr = prev + String(i) + ".";
+            flatten(obj[i],presentStr,otherObj);
+
         }else{
-            console.log("execute else ");
-            otherObj[c] = obj[c];
+            
+            presentStr = prev + String(i);
+            otherObj[presentStr] = obj[i];   
         }
-        
-    }
-    return otherObj;
+    }   
 }
 
-console.log(flatten(obj));
+flatten(obj,"",otherObj);
+console.log(otherObj);

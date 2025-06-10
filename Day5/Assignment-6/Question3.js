@@ -4,10 +4,11 @@
 
 
 class Person {
-    constructor(name,age,gender){
+    constructor(name,age,gender,interest){
         this.name=name;
         this.age=age;
         this.gender=gender;
+        this.interest=interest;
         
     }
 
@@ -19,8 +20,8 @@ class Person {
         console.log(`Good bye to ${this.name}`);
     }
 }
-
-const now = new Person("Rai",20,"Male");
+arr=["travel","sports"]
+const now = new Person("Rai",20,"Male",arr);
 now.greet();
 now.farewell();
 
