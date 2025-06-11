@@ -28,7 +28,8 @@ const flatten = (obj,prev,otherObj) => {
             otherObj[presentStr] = obj[i];   
         }
     }   
+    return otherObj;
 }
 
-flatten(obj,"",otherObj);
-console.log(otherObj);
+console.log(flatten(obj,"",otherObj));
+

@@ -13,27 +13,37 @@ class Person{
         console.log(`${this.firstname } ${this.lastname} `);
     }
 
-    getAverage(arr){
-        let sum=0;
-        for(let i=0;i<arr.length;i++){
+    // getAverage(arr){
+    //     let sum=0;
+    //     for(let i=0;i<arr.length;i++){
             
-            sum += arr[i].age;
-        }
-        return sum/arr.length;
+    //         sum += arr[i].age;
+    //     }
+    //     return sum/arr.length;
 
+    // }
+
+    getAverage(arr){
+        
+        return arr.reduce((a,b)=>a+b.age,0)/arr.length;
     }
 
 }
 
 
-
-arr=[];
-for(let i=0;i<10;i++){
-    const p1= new Person("John","Doe",20+i);
-    arr.push(p1);
-}
+// //Method-1
+// arr=[];
+// for(let i=0;i<10;i++){
+//     const p1= new Person("John","Doe",20+i);
+//     arr.push(p1);
+// }
 
 const p= new Person("John","Doe",20);
+const p1= new Person("Divyanshu","Bhardwaj",40);
+
+
+arr =[p,p1];
+
 p.fullname();
 
 console.log(p.getAverage(arr));

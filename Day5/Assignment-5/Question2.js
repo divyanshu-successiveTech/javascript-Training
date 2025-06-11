@@ -7,13 +7,27 @@ const obj= [
     },
     {  
         name: "Doe",
-        age: 15
+        age: '15'
     },
     {    
         name: "Peter",
         age: 47
     }
 ]
+
+function checkNumber(n){
+    if(typeof(n) === "number"){
+        return n;
+    }else{
+        Number(n);
+        return n;
+    }
+}
+
+for(let i=0;i<obj.length;i++){
+    checkNumber(obj[i].age)
+
+}
 
 obj.sort((a,b)=> a.age - b.age );
 console.log(obj);

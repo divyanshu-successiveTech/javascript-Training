@@ -33,14 +33,14 @@ class Student extends Person {
         this.studies = studies;
     }
 
-    greet(){
+    greeting(){
         console.log(`The student is studying ${this.studies}`);
     }
 }
 
 const stu = new Student("Maths");
 
-stu.greet();
+stu.greeting();
 
 class Teacher extends Person{
     constructor(teach){

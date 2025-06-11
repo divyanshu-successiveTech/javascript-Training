@@ -17,9 +17,13 @@ const arr=[
         age: 47
     }
 ]
-
+//Method-1
 for(const c of arr){
     delete c.id;
 }
-// console.log(arr.id);
+
 console.log(arr);
+  
+ //Method-2   
+const newArr =arr.map(({id,...all}) => all);
+console.log(newArr);
