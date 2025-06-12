@@ -1,3 +1,7 @@
+// Find Error in below questions and rectify them
+
+
+
 // 11. var promise = new Promise(function(resolve, reject) {
 //    setTimeout(function() { resolve("Data received"); }, 1000);
 // });
