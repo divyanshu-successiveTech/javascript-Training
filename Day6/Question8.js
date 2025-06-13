@@ -46,6 +46,26 @@ async function main(arr){
     console.log("The sum of all the id is : " + sum);
 }
 
-main(arr);
+// main(arr);
+
+
+
+//Method-2
+
+async function multiplePromises(){
+    const urls =['https://jsonplaceholder.typicode.com/todos/1','https://jsonplaceholder.typicode.com/todos/2','https://jsonplaceholder.typicode.com/todos/3'];
+
+    const responses = await Promise.all(urls.map(url => fetch(url)));
+    const arr= await Promise.all(responses.map(res => res.json()));
+    console.log(arr);
+    let sum=0;
+    for(let i =0;i<arr.length;i++){
+        sum += arr[i].id;
+    }
+
+    console.log(sum);
+}
+
+multiplePromises();
 
 
